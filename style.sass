@@ -1,0 +1,41 @@
+$background-color: #f4f4f4
+$primary-color: #0bb3a2
+$text-color: #fff
+
+
+body
+  margin: 0
+  font-family: 'Segoe UI', sans-serif
+  scroll-behavior: smooth
+
+section
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  padding: 60px 20px
+  text-align: center
+
+
+.image-section
+  background: $background-color
+  padding: 80px 20px
+  position: relative
+
+  img
+    min-width: 600px
+    max-height: 350px
+    border-radius: 10px
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2)
+
+  .caption
+    margin-top: 20px
+    position: absolute
+
+    h2
+      color: $primary-color
+      font-size: 2rem
+
+    p
+      color: $text-color
+      font-size: 1.1rem
