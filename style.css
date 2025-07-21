@@ -1,7 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 section {
@@ -14,12 +21,14 @@ section {
 }
 
 .image-section {
+  width: 100%;
   background: #f4f4f4;
   padding: 80px 20px;
   position: relative;
 }
 .image-section img {
-  min-width: 600px;
+  width: 100%;
+  max-width: 600px;
   max-height: 350px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -35,4 +44,43 @@ section {
 .image-section .caption p {
   color: #fff;
   font-size: 1.1rem;
+}
+
+@media (max-width: 720px) {
+  .image-section {
+    padding: 40px 10px;
+    gap: 20px;
+  }
+  .image-section img {
+    width: 400px;
+    max-height: 200px;
+  }
+  .image-section .caption {
+    padding: 10px;
+  }
+  .image-section .caption h2 {
+    font-size: 1.2rem;
+  }
+  .image-section .caption p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 500px) {
+  .image-section {
+    padding: 40px 10px;
+    gap: 20px;
+  }
+  .image-section img {
+    width: 300px;
+    max-height: 200px;
+  }
+  .image-section .caption {
+    padding: 10px;
+  }
+  .image-section .caption h2 {
+    font-size: 1.2rem;
+  }
+  .image-section .caption p {
+    font-size: 0.9rem;
+  }
 }/*# sourceMappingURL=style.css.map */

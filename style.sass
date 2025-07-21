@@ -2,11 +2,16 @@ $background-color: #f4f4f4
 $primary-color: #0bb3a2
 $text-color: #fff
 
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
 
 body
   margin: 0
   font-family: 'Segoe UI', sans-serif
   scroll-behavior: smooth
+  overflow-x: hidden
 
 section
   display: flex
@@ -18,12 +23,14 @@ section
 
 
 .image-section
+  width: 100%
   background: $background-color
   padding: 80px 20px
   position: relative
 
   img
-    min-width: 600px
+    width: 100%
+    max-width: 600px
     max-height: 350px
     border-radius: 10px
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2)
@@ -39,3 +46,41 @@ section
     p
       color: $text-color
       font-size: 1.1rem
+
+@media (max-width: 720px)
+  .image-section
+    padding: 40px 10px
+    gap: 20px
+
+    img
+      width: 400px
+      max-height: 200px
+
+    .caption
+      padding: 10px
+
+      h2
+        font-size: 1.2rem
+
+      p
+        font-size: 0.9rem
+        
+
+@media (max-width: 500px)
+  .image-section
+    padding: 40px 10px
+    gap: 20px
+
+    img
+      width: 300px
+      max-height: 200px
+
+    .caption
+      padding: 10px
+
+      h2
+        font-size: 1.2rem
+
+      p
+        font-size: 0.9rem
+        
